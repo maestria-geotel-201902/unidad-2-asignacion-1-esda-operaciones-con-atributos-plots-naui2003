@@ -420,7 +420,7 @@ proven17 %>%
   gather(variable, valor, -TOPONIMIA) %>%
   ggplot() + aes(x = TOPONIMIA, y = valor, fill = variable, group = variable) +
   geom_col(position = 'dodge') + scale_y_continuous() +
-  theme(axis.text.x = element_text(angle = 90), text = element_text(size = 12))  + coord_flip()
+  theme(axis.text.x = element_text(angle = 90), text = element_text(size = 6))  + coord_flip()
 
 #Barras apiladas (position = 'fill')
 proven17 %>%
@@ -429,7 +429,7 @@ proven17 %>%
   gather(variable, valor, -TOPONIMIA) %>%
   ggplot() + aes(x = TOPONIMIA, y = valor, fill = variable, group = variable) +
   geom_col(position = 'fill') + scale_y_continuous() +
-  theme(axis.text.x = element_text(angle = 90), text = element_text(size = 12))  + coord_flip()
+  theme(axis.text.x = element_text(angle = 90), text = element_text(size = 6))  + coord_flip()
 ```
 
 * Ahora genera una tabla que muestre las respuestas a tu pregunta en tu provincia asignada:
